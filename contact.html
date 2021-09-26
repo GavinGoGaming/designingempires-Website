@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='icon' href='images/logo/logo_hd_square.ico'>
+    <title>Designing Empires</title>
+    <script src='jquery.js'></script>
+    <script>
+        var velocity = 0.5; 
+        function update(){
+            var pos = $(window).scrollTop(); 
+            $('body').each(function() {
+                var $element = $(this); 
+                var height = $element.height()-18;
+                $(this).css('backgroundPosition', '50% ' + Math.round((height - pos) * velocity) +  'px');
+            }); 
+        }; 
+        $(window).bind('scroll', update);
+    </script>
+    <style>
+        @font-face {
+            font-family: 'StarWars';
+            src: url("fonts/Starjedi.ttf");
+        }
+        @font-face {
+            font-family: 'StarWarsHollow';
+            src: url("fonts/Starjhol.ttf");
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("/images/bg.jpg");
+            color:white;
+            background-position: center;
+        }
+        .starwarsfont {
+            font-family: 'StarWars', Arial, Helvetica;
+        }
+        .starwarsfonthollow {
+            font-family: 'StarWarsHollow', Arial, Helvetica;
+        }
+        .navbar {
+            background-color: black;
+            border-color: black;
+            border:none;
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+            font-size: 20px;
+            font-family: 'StarWars', Arial, Helvetica;
+            padding: 10px 15px;
+            margin-bottom: 20px;
+            -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+            box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+            height: 30px;
+        }
+        .title {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-decoration: none;
+            text-decoration-color: #fff;
+            color:#fff;
+        }
+        .navbar-button {
+            border-radius: 0;
+            border-color: #fff;
+            color: #fff;
+            padding: 10px;
+            font-size: 20px;
+            text-decoration: none;
+            text-decoration-color: #fff;
+        }
+        .navbar-button:hover {
+            border-radius: 0;
+            border-color: #fff;
+            color: #f4c844;
+            padding: 10px;
+            font-size: 20px;
+            text-decoration: underline;
+            text-decoration-color: #fff;
+        }
+        .right-nav {
+            float: right;
+            margin-right: 10px;
+        }
+        .left-nav {
+            float: left;
+            margin-left: 10px;
+        }
+        .centered{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .link {
+            color: #fff;
+            text-decoration: none;
+            text-decoration-color: #fff;
+        }
+        .link:hover {
+            color: #fff;
+            text-decoration: underline;
+            text-decoration-color: #fff;
+        }
+    </style>
+</head>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+    function href(url) {
+        window.location.href = url;
+    }
+</script>
+<body>
+    <nav class='navbar'>
+        <div class='right-nav'>
+            <a class='navbar-button' href='about.html'>About</a>
+            <a class='navbar-button' href='castandcrew.html'>Cast and Crew</a>
+            
+            <a class='navbar-button' href='discord.html'>Discord</a>
+            
+            <a class='navbar-button' href='contact.html'>Contact</a>
+
+        </div>
+        <div class='left-nav'>
+            <a class='starwarsfont title' href='/#'>Designing Empires</a>
+        </div>
+    </nav>
+    <div class='content'>
+        <div class='centered'>
+            <p style="font-size:larger; letter-spacing: 0.5px;">
+                <a class="starwarsfont">Contact Designing Empires</a>
+                <br>Please contact us at <a class="link" href="mailto:designingempires@gmail.com">our email.</a>
+                <br>Or, you can join our <a class="link" href="discord.html">Discord Server</a> to get in contact.
+                <br>If this is not working, tweet us at <a class="link" href="https://twitter.com/DesigninEmpires">@DesigninEmpires</a>
+                This website is still under construction.
+            </p>
+        </div>
+        <div class="centered" style="margin-top:80px;margin-bottom:80px">
+            <img style="height:36px;width:36px;margin-right:30px;cursor: pointer;" onclick="href('https://www.youtube.com/channel/UCvOC7ZCLDPN_5HlggNg61jw')" title="Subscribe to our YouTube to watch the show!" src="images/youtube.png" alt="Youtube" width="50" height="50">
+            <img style="height:36px;width:36px;margin-right:30px;cursor: pointer;" onclick="href('https://www.instagram.com/designingempires/')" title="Follow our instagram!" src="images/logo-instagram.png" alt="Instagram" width="50" height="50">
+            <img style="height:36px;width:36px;margin-right:30px;cursor: pointer;" onclick="href('discord.html')" title="Join the discord!" src="images/discord.png" alt="Discord" width="50" height="50">
+            <img style="height:36px;width:36px;margin-right:30px;cursor: pointer;" onclick="href('https://www.facebook.com/designingempires')" title="Follow our facebook!" src="images/logo-facebook.png" alt="Facebook" width="50" height="50">
+            <img style="height:36px;width:36px;margin-right:30px;cursor: pointer;" onclick="href('https://twitter.com/designinempires')" title="Follow our twitter!" src="images/twitter.png" alt="Twitter" width="50" height="50">
+        </div>
+    </div>
+</body>
+</html>

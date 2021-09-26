@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='icon' href='images/logo/logo_hd_square.ico'>
+    <title>Designing Empires</title>
+    <script src='jquery.js'></script>
+    <script>
+        var velocity = 0.5; 
+        function update(){
+            var pos = $(window).scrollTop(); 
+            $('body').each(function() {
+                var $element = $(this); 
+                var height = $element.height()-18;
+                $(this).css('backgroundPosition', '50% ' + Math.round((height - pos) * velocity) +  'px');
+            }); 
+        }; 
+        $(window).bind('scroll', update);
+    </script>
+    <style>
+        @font-face {
+            font-family: 'StarWars';
+            src: url("fonts/Starjedi.ttf");
+        }
+        @font-face {
+            font-family: 'StarWarsHollow';
+            src: url("fonts/Starjhol.ttf");
+        }
+        @font-face {
+            font-family: 'Univers';
+            src: url("fonts/Univers-light-normal.ttf");
+        }
+        body {
+            font-family: 'Univers', Helvetica, sans-serif;
+            background-image: url("/images/bg.jpg");
+            color:white;
+            background-position: center;
+        }
+        .starwarsfont {
+            font-family: 'StarWars', Arial, Helvetica;
+        }
+        .starwarsfonthollow {
+            font-family: 'StarWarsHollow', Arial, Helvetica;
+        }
+        .navbar {
+            background-color: black;
+            border-color: black;
+            border:none;
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+            font-size: 20px;
+            font-family: 'StarWars', Arial, Helvetica;
+            padding: 10px 15px;
+            margin-bottom: 20px;
+            -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+            box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+            height: 30px;
+        }
+        .title {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-decoration: none;
+            text-decoration-color: #fff;
+            color:#fff;
+        }
+        .navbar-button {
+            border-radius: 0;
+            border-color: #fff;
+            color: #fff;
+            padding: 10px;
+            font-size: 20px;
+            text-decoration: none;
+            text-decoration-color: #fff;
+        }
+        .navbar-button:hover {
+            border-radius: 0;
+            border-color: #fff;
+            color: #f4c844;
+            padding: 10px;
+            font-size: 20px;
+            text-decoration: underline;
+            text-decoration-color: #fff;
+        }
+        .right-nav {
+            float: right;
+            margin-right: 10px;
+        }
+        .left-nav {
+            float: left;
+            margin-left: 10px;
+        }
+        .centered{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .long-time-ago {
+            font-size: calc(1vw + 1vh + 1.25vmin);
+            height: 100%;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            display: flex;
+            animation: fadeIn 2s ease-in;
+            color: #4bd5ee;
+            font-family: "News Cycle", sans-serif;
+            font-weight: 400;
+            line-height: 1.35;
+            width: 12em;
+        }
+        @keyframes fadeIn {
+            from {
+                color: #000;
+            }
+            to {
+                color: #4bd5ee;
+            }
+        }
+    </style>
+</head>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+    function href(url) {
+        window.location.href = url;
+    }
+</script>
+<body>
+    <nav class='navbar'>
+        <div class='right-nav'>
+            <a class='navbar-button' href='about.html'>About</a>
+            <a class='navbar-button' href='castandcrew.html'>Cast and Crew</a>
+            
+            <a class='navbar-button' href='discord.html'>Discord</a>
+            
+            <a class='navbar-button' href='contact.html'>Contact</a>
+
+        </div>
+        <div class='left-nav'>
+            <a class='starwarsfont title' href='/#'>Designing Empires</a>
+        </div>
+    </nav>
+    <div class='content'>
+        <div class='centered'>
+            <h1 class="long-time-ago">A long time ago in a galaxy far, far away....</h1>
+        </div>
+        <div class='' style="margin-right: 25%;margin-left: 25%;">
+            <p style="font-size:larger">
+                <a class="starwarsfont">Designing Empires</a> is a workplace comedy web series set in the Star Wars universe.
+                Empathos, the long-time Imperial Design agency, has run out of time coasting along in the chaotic period following the destruction of the 2nd Death Star - it’s
+                put up or shut up time, with consequences as dire as you’d expect from the Empire.
+                Told via a series of Zoom-style meetings between Empathos and their unhinged Imperial point of contact,
+                the demoralized team must help the recently defeated Galactic Empire to pivot, or else.
+                <br>
+                <br>
+                <a class="starwarsfont">Synopsis:</a>
+                <br>
+                <br>
+                The Star Wars universe is filled with design - whether it’s the typefaces used in Imperial bases, the interfaces of targeting computers, or giant imposing banners with intimidating logos, someone had to design them. Meet Empathos, the design agency of record for the Galactic Empire, who have been keeping the Empire in pixels and paint since before the first Death Star was built. But things have changed - a lot - and the needs and patience of the Empire have changed with them. Under threat of being, um, downsized, the Empathos leadership team have one last shot to rebrand the Empire as a formidable force in the galaxy and save themselves after the destruction of the second Death Star leaves the future of the Empire in doubt. 
+                <br><br>
+                This 9 episode workplace comedy series pokes fun at the world of Star Wars as well as the idiosyncrasies of the design world. Written entirely during the Covid-19 pandemic by playing off the now-all-too-familiar tropes of video conferencing meetings, this series is a riff on shows like Silicon Valley and Mythic Quest, set inside a parody world of Star Wars following the events of Return of the Jedi and the lead up to The Force Awakens.
+                <br><br>
+                <a class="starwarsfont">The Production:</a>
+                <br><br>
+                This will be an entirely community-generated passion project, to be shot with low-to-no budget and written and produced by a group of talented actors, writers, designers and fans with the intention to both honor and poke fun at Star Wars, design work and agency life. The idea and opportunity to produce this show was inspired and fueled by designers and performers being locked inside during the pandemic, and from seeing both the opportunities and the absurdities of the shift to remote work and its incessant Zoom meetings. It made it possible to see prospects for both ideation and execution on the concept, and the possibility to actually create and produce such a show via remote production techniques. 
+            </p>
+        </div>
+        <div class="centered" style="margin-top:80px;margin-bottom:80px">
+            <img style="height:36px;width:36px;margin-right:30px;cursor: pointer;" onclick="href('https://www.youtube.com/channel/UCvOC7ZCLDPN_5HlggNg61jw')" title="Subscribe to our YouTube to watch the show!" src="images/youtube.png" alt="Youtube" width="50" height="50">
+            <img style="height:36px;width:36px;margin-right:30px;cursor: pointer;" onclick="href('https://www.instagram.com/designingempires/')" title="Follow our instagram!" src="images/logo-instagram.png" alt="Instagram" width="50" height="50">
+            <img style="height:36px;width:36px;margin-right:30px;cursor: pointer;" onclick="href('discord.html')" title="Join the discord!" src="images/discord.png" alt="Discord" width="50" height="50">
+            <img style="height:36px;width:36px;margin-right:30px;cursor: pointer;" onclick="href('https://www.facebook.com/designingempires')" title="Follow our facebook!" src="images/logo-facebook.png" alt="Facebook" width="50" height="50">
+            <img style="height:36px;width:36px;margin-right:30px;cursor: pointer;" onclick="href('https://twitter.com/designinempires')" title="Follow our twitter!" src="images/twitter.png" alt="Twitter" width="50" height="50">
+        </div>
+    </div>
+</body>
+</html>
