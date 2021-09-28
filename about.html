@@ -28,12 +28,8 @@
             font-family: 'StarWarsHollow';
             src: url("fonts/Starjhol.ttf");
         }
-        @font-face {
-            font-family: 'Univers';
-            src: url("fonts/Univers-light-normal.ttf");
-        }
         body {
-            font-family: 'Univers', Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             background-image: url("/images/bg.jpg");
             color:white;
             background-position: center;
@@ -53,19 +49,22 @@
             text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
             font-size: 20px;
             font-family: 'StarWars', Arial, Helvetica;
-            padding: 10px 15px;
+            padding: 10px 20px;
             margin-bottom: 20px;
+            margin-left:-10px;
             -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
             box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-            height: 30px;
+            height: 40px;
+            width:100%;
         }
         .title {
-            font-size: 26px;
+            font-size: 20px;
             font-weight: bold;
             margin-bottom: 10px;
             text-decoration: none;
             text-decoration-color: #fff;
             color:#fff;
+            color:#f4c844;
         }
         .navbar-button {
             border-radius: 0;
@@ -83,7 +82,7 @@
             padding: 10px;
             font-size: 20px;
             text-decoration: underline;
-            text-decoration-color: #fff;
+            text-decoration-color: #f4c844;
         }
         .right-nav {
             float: right;
@@ -113,6 +112,16 @@
             line-height: 1.35;
             width: 12em;
         }
+        .link {
+            color: lightblue;
+            text-decoration: none;
+            text-decoration-color: blue;
+        }
+        .link:hover {
+            color: lightblue;
+            text-decoration: underline;
+            text-decoration-color: blue;
+        }
         @keyframes fadeIn {
             from {
                 color: #000;
@@ -121,6 +130,7 @@
                 color: #4bd5ee;
             }
         }
+
     </style>
 </head>
 <script>
@@ -133,18 +143,20 @@
 </script>
 <body>
     <nav class='navbar'>
-        <div class='right-nav'>
+        <div class='left-nav'>
+            <a class='title' href='/#'>Designing Empires</a>
+        </div>
+        
+                <div class='right-nav'>
             <a class='navbar-button' href='about.html'>About</a>
             <a class='navbar-button' href='castandcrew.html'>Cast and Crew</a>
             
-            <a class='navbar-button' href='discord.html'>Discord</a>
+            <a class='navbar-button' href='discord.html' target="_new">Discord</a>
             
             <a class='navbar-button' href='contact.html'>Contact</a>
 
         </div>
-        <div class='left-nav'>
-            <a class='starwarsfont title' href='/#'>Designing Empires</a>
-        </div>
+       
     </nav>
     <div class='content'>
         <div class='centered'>

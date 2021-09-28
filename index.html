@@ -49,19 +49,22 @@
             text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
             font-size: 20px;
             font-family: 'StarWars', Arial, Helvetica;
-            padding: 10px 15px;
+            padding: 10px 20px;
             margin-bottom: 20px;
+            margin-left:-10px;
             -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
             box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-            height: 30px;
+            height: 40px;
+            width:100%;
         }
         .title {
-            font-size: 26px;
+            font-size: 20px;
             font-weight: bold;
             margin-bottom: 10px;
             text-decoration: none;
             text-decoration-color: #fff;
             color:#fff;
+            color:#f4c844;
         }
         .navbar-button {
             border-radius: 0;
@@ -79,7 +82,7 @@
             padding: 10px;
             font-size: 20px;
             text-decoration: underline;
-            text-decoration-color: #fff;
+            text-decoration-color: #f4c844;
         }
         .right-nav {
             float: right;
@@ -94,6 +97,40 @@
             justify-content: center;
             text-align: center;
         }
+        .long-time-ago {
+            font-size: calc(1vw + 1vh + 1.25vmin);
+            height: 100%;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            display: flex;
+            animation: fadeIn 2s ease-in;
+            color: #4bd5ee;
+            font-family: "News Cycle", sans-serif;
+            font-weight: 400;
+            line-height: 1.35;
+            width: 12em;
+        }
+        .link {
+            color: lightblue;
+            text-decoration: none;
+            text-decoration-color: blue;
+        }
+        .link:hover {
+            color: lightblue;
+            text-decoration: underline;
+            text-decoration-color: blue;
+        }
+        @keyframes fadeIn {
+            from {
+                color: #000;
+            }
+            to {
+                color: #4bd5ee;
+            }
+        }
+
     </style>
 </head>
 <script>
@@ -106,23 +143,27 @@
 </script>
 <body>
     <nav class='navbar'>
+         <div class='left-nav'>
+            <a class='starwarsfont title' href='/#'>Designing Empires</a>
+        </div>
         <div class='right-nav'>
             <a class='navbar-button' href='about.html'>About</a>
             <a class='navbar-button' href='castandcrew.html'>Cast and Crew</a>
             
             
-            <a class='navbar-button' href='discord.html'>Discord</a>
+            <a class='navbar-button' href='discord.html' target="_new">Discord</a>
             
             <a class='navbar-button' href='contact.html'>Contact</a>
 
         </div>
-        <div class='left-nav'>
-            <a class='starwarsfont title' href='/#'>Designing Empires</a>
-        </div>
+       
     </nav>
     <div class='content'>
-        <div class='centered'>
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4mbpJaqlCME" title="Designing Empires Teaser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+                <br>
+                <br>
+        <div class='centered,' 'width:90%' align='center'>
+            <iframe width="600" height="400" src="https://www.youtube-nocookie.com/embed/4mbpJaqlCME" title="Designing Empires Teaser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class='' style="margin-right:25%;margin-left: 25%;">
             <p style="font-size:larger">
