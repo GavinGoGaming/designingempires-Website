@@ -19,119 +19,7 @@
         }; 
         $(window).bind('scroll', update);
     </script>
-    <style>
-        @font-face {
-            font-family: 'StarWars';
-            src: url("fonts/Starjedi.ttf");
-        }
-        @font-face {
-            font-family: 'StarWarsHollow';
-            src: url("fonts/Starjhol.ttf");
-        }
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: url("/images/bg.jpg");
-            color:white;
-            background-position: center;
-        }
-        .starwarsfont {
-            font-family: 'StarWars', Arial, Helvetica;
-        }
-        .starwarsfonthollow {
-            font-family: 'StarWarsHollow', Arial, Helvetica;
-        }
-        .navbar {
-            background-color: black;
-            border-color: black;
-            border:none;
-            color: #fff;
-            text-align: center;
-            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-            font-size: 20px;
-            font-family: 'StarWars', Arial, Helvetica;
-            padding: 10px 20px;
-            margin-bottom: 20px;
-            margin-left:-10px;
-            -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-            box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-            height: 40px;
-            width:100%;
-        }
-        .title {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            text-decoration: none;
-            text-decoration-color: #fff;
-            color:#fff;
-            color:#f4c844;
-        }
-        .navbar-button {
-            border-radius: 0;
-            border-color: #fff;
-            color: #fff;
-            padding: 10px;
-            font-size: 20px;
-            text-decoration: none;
-            text-decoration-color: #fff;
-        }
-        .navbar-button:hover {
-            border-radius: 0;
-            border-color: #fff;
-            color: #f4c844;
-            padding: 10px;
-            font-size: 20px;
-            text-decoration: underline;
-            text-decoration-color: #f4c844;
-        }
-        .right-nav {
-            float: right;
-            margin-right: 10px;
-        }
-        .left-nav {
-            float: left;
-            margin-left: 10px;
-        }
-        .centered{
-            display: flex;
-            justify-content: center;
-            text-align: center;
-        }
-        .long-time-ago {
-            font-size: calc(1vw + 1vh + 1.25vmin);
-            height: 100%;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            display: flex;
-            animation: fadeIn 2s ease-in;
-            color: #4bd5ee;
-            font-family: "News Cycle", sans-serif;
-            font-weight: 400;
-            line-height: 1.35;
-            width: 12em;
-        }
-        .link {
-            color: lightblue;
-            text-decoration: none;
-            text-decoration-color: blue;
-        }
-        .link:hover {
-            color: lightblue;
-            text-decoration: underline;
-            text-decoration-color: blue;
-        }
-        @keyframes fadeIn {
-            from {
-                color: #000;
-            }
-            to {
-                color: #4bd5ee;
-            }
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <script>
     function goBack() {
@@ -142,6 +30,9 @@
     }
 </script>
 <body>
+    <i class="menu-icon fa-solid fa-bars menu-open"></i>
+    <i class="menu-icon fa-solid fa-x menu-close"></i>
+    <script src="menuicons.js"></script>
     <nav class='navbar'>
          <div class='left-nav'>
             <a class='title' href='/#'>Designing Empires</a>
@@ -158,10 +49,8 @@
        
     </nav>
     <div class='content'>
-        <div class='centered'>
-            <h1 class="long-time-ago">A long time ago in a galaxy far, far away....</h1>
-        </div>
-        <div class='' style="margin-right: 25%;margin-left: 25%;">
+        <div>
+            <h1>Cast and Crew</h1>
             <p style="font-size:larger">
                 <a class="starwarsfont" style="color:#f4c844;font-size:5.5vh;">CAST</a><br>
                 <br>The characters in this ensemble range from ruthless, to hapless, to hopeless, and include: 
@@ -214,16 +103,17 @@
                 <br>
                 <br>With degrees from The Art Institute of Chicago and California Institute of the Arts, Teresa brings her design skills/abilities to the diverse worlds of theatre, dance, film, video, sculpture, fine arts and fashion. She resides in Los Angeles working both locally and abroad.  Through Faabrika Creations, Teresa provides folks with everything from:  Wardrobe Design / Consultation and Custom Dresses / Coats / Garments for their bodies to Scenic Design, Sculpture, Murals and Décor for their environments.
                 <br>
-                <br>Website made with ❤ by <a class="link" href="https://gavingogaming.com/">GavinGoGaming</a>
+                <br>This website and the discord have been made with ❤ by <a class="link" href="https://gavingogaming.com/">GavinGoGaming</a>
             </p>
         </div>
-        <div class="centered" style="margin-top:80px;margin-bottom:80px">
+        <center>
+            <h5>This project is a parody made with love for the Star Wars universe. Not affiliated with Disney or Lucasfilm.</h5>
             <img style="height:36px;width:36px;margin-right:30px;cursor: pointer;" onclick="href('https://www.youtube.com/channel/UCvOC7ZCLDPN_5HlggNg61jw')" title="Subscribe to our YouTube to watch the show!" src="images/youtube.png" alt="Youtube" width="50" height="50">
             <img style="height:36px;width:36px;margin-right:30px;cursor: pointer;" onclick="href('https://www.instagram.com/designingempires/')" title="Follow our instagram!" src="images/logo-instagram.png" alt="Instagram" width="50" height="50">
             <img style="height:36px;width:36px;margin-right:30px;cursor: pointer;" onclick="href('discord.html')" title="Join the discord!" src="images/discord.png" alt="Discord" width="50" height="50">
             <img style="height:36px;width:36px;margin-right:30px;cursor: pointer;" onclick="href('https://www.facebook.com/designingempires')" title="Follow our facebook!" src="images/logo-facebook.png" alt="Facebook" width="50" height="50">
             <img style="height:36px;width:36px;margin-right:30px;cursor: pointer;" onclick="href('https://twitter.com/designinempires')" title="Follow our twitter!" src="images/twitter.png" alt="Twitter" width="50" height="50">
-        </div>
+        </center>
     </div>
 </body>
 </html>

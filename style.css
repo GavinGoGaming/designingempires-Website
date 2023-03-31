@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'StarWars';
+    src: url("fonts/Starjedi.ttf");
+}
+@font-face {
+    font-family: 'StarWarsHollow';
+    src: url("fonts/Starjhol.ttf");
+}
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #232223;
+    color:white;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+.starwarsfont {
+    font-family: 'StarWars', Arial, Helvetica;
+}
+.starwarsfonthollow {
+    font-family: 'StarWarsHollow', Arial, Helvetica;
+}
+
+@media only screen and (max-width: 776px) {
+    .navbar {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
+@media only screen and (min-width: 777px) {
+    .menu-icon {
+        display: none;
+    }
+}
+
+.navbar {
+    background-color: black;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'StarWars', Arial, Helvetica;
+    padding: 10px;
+    height: 40px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-decoration-color: #fff;
+    color:#fff;
+    color:#f4c844;
+}
+.navbar-button {
+    color: #fff;
+    padding: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    text-decoration-color: #fff;
+}
+.navbar-button:hover {
+    color: #f4c844;
+    text-decoration: underline;
+    text-decoration-color: #f4c844;
+}
+.right-nav {
+    float: right;
+}
+.left-nav {
+    float: left;
+}
+.content{
+    width: 70vw;
+    height: 100vh;
+    margin-left: 15vw;
+    font-size: larger;
+}
+::-webkit-scrollbar {
+    width: 10px; /* width of the scrollbar */
+    background-color: transparent; /* make the scrollbar background transparent */
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: rgba(109, 251, 244, 0.7);
+    border-radius: 5px;
+    background: linear-gradient(from top, to bottom, rgba(109, 251, 244, 0.7), rgba(98, 87, 255, 0.7)); /* set the scrollbar thumb to a semi-transparent white color */
+}  
+.link {
+    color: lightblue;
+    text-decoration: none;
+    text-decoration-color: blue;
+}
+.link:hover {
+    color: lightblue;
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
